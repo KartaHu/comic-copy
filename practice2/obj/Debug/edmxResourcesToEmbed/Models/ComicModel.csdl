@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="practice2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="practice2">
+    <Key>
+      <PropertyRef Name="title" />
+    </Key>
+    <Property Name="id" Type="Int32" />
+    <Property Name="author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="imgsrc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="weburl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="updatetime" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="updateround" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="year" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="region" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="index" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="updateto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="idea" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="practice2Entities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="practice2" EntityType="Self.practice2" />
+  </EntityContainer>
+</Schema>

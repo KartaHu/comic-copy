@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="practice2ModelStoreContainer" CdmEntityContainer="practice2Entities2">
+    <EntitySetMapping Name="practice2">
+      <EntityTypeMapping TypeName="practice2Model.practice2">
+        <MappingFragment StoreEntitySet="practice2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="imgsrc" ColumnName="imgsrc" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="weburl" ColumnName="weburl" />
+          <ScalarProperty Name="updatetime" ColumnName="updatetime" />
+          <ScalarProperty Name="updateround" ColumnName="updateround" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="index" ColumnName="index" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="updateto" ColumnName="updateto" />
+          <ScalarProperty Name="idea" ColumnName="idea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

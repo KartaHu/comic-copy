@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="practice2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="practice2">
+    <Key>
+      <PropertyRef Name="title" />
+    </Key>
+    <Property Name="id" Type="int" />
+    <Property Name="author" Type="nvarchar(max)" />
+    <Property Name="imgsrc" Type="nvarchar(max)" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="weburl" Type="nvarchar(max)" />
+    <Property Name="updatetime" Type="nvarchar(max)" />
+    <Property Name="updateround" Type="nvarchar(max)" />
+    <Property Name="year" Type="nvarchar(max)" />
+    <Property Name="region" Type="nvarchar(max)" />
+    <Property Name="index" Type="nvarchar(max)" />
+    <Property Name="category" Type="nvarchar(max)" />
+    <Property Name="updateto" Type="nvarchar(max)" />
+    <Property Name="idea" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="practice2ModelStoreContainer">
+    <EntitySet Name="practice2" EntityType="Self.practice2" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
